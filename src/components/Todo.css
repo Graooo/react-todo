@@ -1,0 +1,11 @@
+.todo-row {
+  user-select: none;
+}
+
+.todo-row:hover {
+  cursor: pointer;
+}
+
+.complete {
+  text-decoration: line-through;
+}
