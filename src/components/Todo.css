@@ -1,5 +1,41 @@
 .todo-row {
   user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  width: 300px;
+  height: 30px;
+  background-color: #2a9d8f;
+  border: 2px solid #264653;
+  border-radius: 10px;
+  position: relative;
+}
+
+.text {
+  font-size: 1.2rem;
+  padding: 0px 30px;
+  color: #f1faee;
+}
+
+.icon-list {
+  display: flex;
+  position: absolute;
+  left: 305px;
+}
+
+.icon {
+  color: white;
+  padding: 5px 5px;
+  border-radius: 10px;
+}
+
+.delete {
+  background-color: red;
+}
+
+.edit {
+  background-color: green;
 }
 
 .todo-row:hover {

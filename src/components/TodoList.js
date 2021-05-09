@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Todo from "./Todo";
 import TodoForm from "./TodoForm";
+import "./TodoList.css";
 
 function TodoList() {
   const [todos, setTodos] = useState([]);
@@ -35,15 +36,19 @@ function TodoList() {
   };
 
   return (
-    <div>
-      <h1>Todo APP</h1>
-      <TodoForm onSubmit={addTodo} />
-      <Todo
-        todos={todos}
-        completeTodo={completeTodo}
-        removeTodo={removeTodo}
-        updateTodo={updateTodo}
-      />
+    <div className="todo-app">
+      <p className="title">Todo App</p>
+      <div className="form">
+        <TodoForm onSubmit={addTodo} />
+      </div>
+      <div className="todo-list">
+        <Todo
+          todos={todos}
+          completeTodo={completeTodo}
+          removeTodo={removeTodo}
+          updateTodo={updateTodo}
+        />
+      </div>
     </div>
   );
 }

@@ -1,0 +1,19 @@
+.edit-form {
+  display: inline-block;
+  width: 400px;
+  height: 50px;
+  background-color: #2a9d8f;
+  border: 2px solid #264653;
+  color: #f1faee;
+  font-size: 2rem;
+  padding-left: 20px;
+}
+
+.edit-button {
+  position: absolute;
+  margin: 10px 0px 0px 5px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #1d3557;
+  color: #f1faee;
+}

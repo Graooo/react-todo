@@ -25,10 +25,15 @@ function Todo({ todos, removeTodo, completeTodo, updateTodo }) {
       className={todo.isComplete ? "todo-row complete" : "todo-row"}
       key={index}
     >
-      <div onClick={() => completeTodo(todo.id)}>{todo.text}</div>
-      <div>
-        <TiEdit onClick={() => setEdit(todo)} />
-        <TiDeleteOutline onClick={() => removeTodo(todo.id)} />
+      <div className="text" onClick={() => completeTodo(todo.id)}>
+        {todo.text}
+      </div>
+      <div className="icon-list">
+        <TiEdit className="edit icon" onClick={() => setEdit(todo)} />
+        <TiDeleteOutline
+          className="delete icon"
+          onClick={() => removeTodo(todo.id)}
+        />
       </div>
     </div>
   ));
